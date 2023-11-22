@@ -1,0 +1,11 @@
+.contact-section {
+  /* background: linear-gradient(180deg, var(--primary-95), white); */
+  background: linear-gradient(180deg, var(--primary-0), var(--primary-10));
+  display: grid;
+  justify-items: center;
+  padding: 4rem 1rem;
+  gap: 1rem;
+  max-width: 100vw;
+  height: max-content;
+  /* margin-top: var(--nav-height); */
+}

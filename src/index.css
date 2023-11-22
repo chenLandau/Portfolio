@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* scroll-snap-align: center; */
+}
+:root {
+  --nav-height: 7vh;
+  --section-height: 93vh;
+  /* colors */
+  --primary-95: #f2f2f2;
+  --primary-90: #e6e6e6;
+  --primary-85: #d9d9d9;
+  --primary-80: #cccccc;
+  --primary-75: #bfbfbf;
+  --primary-70: #b3b3b3;
+  --primary-65: #a6a6a6;
+  --primary-60: #999999;
+  --primary-55: #8c8c8c;
+  --primary-50: #808080;
+  --primary-45: #737373;
+  --primary-40: #666666;
+  --primary-35: #595959;
+  --primary-30: #4d4d4d;
+  --primary-10: #1a1a1a;
+
+  --primary-5: #0d0d0d;
+  --primary-0: #000000;
+  --primaryColor: #c3603c;
+  --backgroundColor: var(--primary-95);
+  --textColor: var(--primary-95);
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(184, 127, 20, 0.881) 0 1px 2px 0
+    rgba(0, 0, 0, 0.06);
+
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  color: var(--textColor);
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding-top: var(--nav-height);
+  height: 100vh;
+}
+.btn {
+  font-weight: bold;
+  transition: var(--transition);
+  padding: 1rem;
+  min-width: 8rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
